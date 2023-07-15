@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class InputData {
-    public void readData(ArrayList<Student> students){
+    public static void readData(ArrayList<Student> students, ArrayList<Course> courses){
         String supervisor = null;
         Student student;
         boolean more = true;
@@ -23,12 +23,18 @@ public class InputData {
                 student = new graduateStudent(name,ID,supervisor);
             }
 
+            String courseName = JOptionPane.showInputDialog("Enter course name: ");
+
+            for(Course course: courses){
+                if(course.getName().equals(courseName)){
+                    student.addCourse(course);
+                }
+            }
+
             students.add(student);
             String answer = JOptionPane.showInputDialog("More students?(Υ/Ν)");
-            if(answer.equals("N"))
-                more = !more;
-
-
+            if(answer.equals("N")||answer.equals("n"))
+                more = false;
         }
 
 
