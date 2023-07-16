@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BankSystem" />
-        <module name="lesson11.4-6" />
+        <module name="graphicalUserInterface" />
         <module name="School" />
         <module name="University" />
         <module name="lesson7.8" />
         <module name="GameWarriors" />
+        <module name="lesson11.4-6" />
+        <module name="Statistics" />
+        <module name="ChessGame" />
       </profile>
     </annotationProcessing>
   </component>
