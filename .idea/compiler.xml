@@ -9,6 +9,7 @@
         <module name="BankSystem" />
         <module name="lesson11.4-6" />
         <module name="School" />
+        <module name="University" />
         <module name="lesson7.8" />
         <module name="GameWarriors" />
       </profile>
