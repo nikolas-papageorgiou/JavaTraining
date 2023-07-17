@@ -13,6 +13,7 @@
         <module name="lesson7.8" />
         <module name="GameWarriors" />
         <module name="lesson11.4-6" />
+        <module name="GUI" />
         <module name="Statistics" />
         <module name="ChessGame" />
       </profile>
