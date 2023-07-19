@@ -6,15 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BankSystem" />
         <module name="graphicalUserInterface" />
-        <module name="School" />
-        <module name="University" />
+        <module name="Set" />
+        <module name="LanguageSchool" />
+        <module name="HashMap" />
         <module name="lesson7.8" />
+        <module name="Statistics" />
+        <module name="AlgorithmsGUI" />
+        <module name="BankSystem" />
+        <module name="School" />
+        <module name="Maps" />
+        <module name="University" />
+        <module name="CollectionsFramework" />
+        <module name="Lists" />
+        <module name="TreeSet" />
         <module name="GameWarriors" />
         <module name="lesson11.4-6" />
         <module name="GUI" />
-        <module name="Statistics" />
+        <module name="Emporeumatokyvotia" />
+        <module name="Library" />
         <module name="ChessGame" />
       </profile>
     </annotationProcessing>

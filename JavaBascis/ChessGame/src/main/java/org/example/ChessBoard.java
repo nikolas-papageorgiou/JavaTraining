@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 
 public class ChessBoard extends JFrame{
     private BoardPanel panel;
@@ -14,8 +15,8 @@ public class ChessBoard extends JFrame{
         this.setContentPane(panel);
 
         this.paintComponents(panel.getGraphics());
-        MouseClickListener Listener = new MouseClickListener();
-        panel.addMouseListener(Listener);
+        MouseMoveListener Listener = new MouseMoveListener();
+        panel.addMouseMotionListener(Listener);
         this.setVisible(true);
         this.setSize(400,400);
         this.setTitle("Chess Board");
@@ -51,31 +52,46 @@ public class ChessBoard extends JFrame{
                 }
             }
             g.setColor(Color.black);
-            g.fillOval(xCoord,yCoord,30,30);
+            g.fillOval(xCoord,yCoord,35,35);
 
 
         }
     }
-    class MouseClickListener implements MouseListener{
-        @Override
-        public void mouseClicked(MouseEvent e) {
-            int x = e.getX();
-            int y = e.getY();
-            panel.setxCoord(x-20);
-            panel.setyCoord(y-20);
-            panel.repaint();
-        }
+//    class MouseClickListener implements MouseListener{
+//        @Override
+//        public void mouseClicked(MouseEvent e) {
+//            int x = e.getX();
+//            int y = e.getY();
+//            panel.setxCoord(x-20);
+//            panel.setyCoord(y-20);
+//            panel.repaint();
+//        }
+//
+//        @Override
+//        public void mouseExited(MouseEvent e) {}
+//
+//        @Override
+//        public void mouseEntered(MouseEvent e) {}
+//
+//        @Override
+//        public void mousePressed(MouseEvent e) {}
+//
+//        @Override
+//        public void mouseReleased(MouseEvent e) {}
+//    }
+    class MouseMoveListener implements MouseMotionListener {
+    @Override
+    public void mouseMoved(MouseEvent e) {
 
-        @Override
-        public void mouseExited(MouseEvent e) {}
-
-        @Override
-        public void mouseEntered(MouseEvent e) {}
-
-        @Override
-        public void mousePressed(MouseEvent e) {}
-
-        @Override
-        public void mouseReleased(MouseEvent e) {}
     }
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+        int x = e.getX();
+        int y = e.getY();
+        panel.setxCoord(x-20);
+        panel.setyCoord(y-20);
+        panel.repaint();
+    }
+}
 }

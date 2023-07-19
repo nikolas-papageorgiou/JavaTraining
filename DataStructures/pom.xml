@@ -5,23 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>JavaBascis</artifactId>
+    <artifactId>DataStructures</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>lesson7.8</module>
-        <module>lesson11.4-6</module>
-        <module>BankSystem</module>
-        <module>GameWarriors</module>
-        <module>School</module>
-        <module>University</module>
-        <module>Statistics</module>
-        <module>graphicalUserInterface</module>
-        <module>ChessGame</module>
-        <module>GUI</module>
-        <module>Emporeumatokyvotia</module>
-        <module>LanguageSchool</module>
-        <module>AlgorithmsGUI</module>
+        <module>CollectionsFramework</module>
+        <module>Set</module>
+        <module>TreeSet</module>
+        <module>HashMap</module>
+        <module>Lists</module>
+        <module>Maps</module>
+        <module>Library</module>
     </modules>
 
     <properties>
